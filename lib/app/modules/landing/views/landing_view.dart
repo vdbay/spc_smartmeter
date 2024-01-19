@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:spc_smartmeter/app/routes/app_pages.dart';
 import 'package:spc_smartmeter/app/utils/spc_utils.dart';
 
 import '../../../common_widgets/spc_elevatedbutton.dart';
@@ -69,11 +70,7 @@ class LandingView extends GetView<LandingController> {
                           isAlternative: true,
                           widthModifier: 0.25,
                           onPressed: () {
-                            SPCUtils.showSnackbar(
-                              SPCTextString.signUp,
-                              SPCTextString.signUp,
-                              type: 4,
-                            );
+                            Get.toNamed(Routes.REGISTER);
                           },
                           text: SPCTextString.signUp,
                         ),

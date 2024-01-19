@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:spc_smartmeter/app/common_widgets/spc_elevatedbutton.dart';
+import 'package:spc_smartmeter/app/modules/auth/controllers/auth_controller.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -13,10 +15,12 @@ class HomeView extends GetView<HomeController> {
         title: const Text('HomeView'),
         centerTitle: true,
       ),
-      body: const Center(
-        child: Text(
-          'HomeView is working',
-          style: TextStyle(fontSize: 20),
+      body:  Center(
+        child: SPCElevatedButton(
+          onPressed: () {
+            AuthController.instance.signOutUser();
+          },
+          text: 'Logout',
         ),
       ),
     );
