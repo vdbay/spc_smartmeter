@@ -6,6 +6,7 @@ import 'firebase_options.dart';
 import './app/routes/app_pages.dart';
 import './app/modules/auth/controllers/auth_controller.dart';
 import './app/localization/hardcoded.dart';
+import './app/common_widgets/spc_themedata.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,6 +26,9 @@ class MyApp extends GetView {
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
       debugShowCheckedModeBanner: false,
+      theme: SPCThemeData.lightTheme,
+      darkTheme: SPCThemeData.darkTheme,
+      themeMode: ThemeMode.light,
       home: const Scaffold(
         body: Center(
           child: CircularProgressIndicator(),
