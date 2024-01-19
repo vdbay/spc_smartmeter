@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "342864669441",
+    "project_id": "spc-smart-meter",
+    "storage_bucket": "spc-smart-meter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342864669441:android:72930d8648dbef9e600900",
+        "android_client_info": {
+          "package_name": "com.scadaprimacipta.smartmeter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYwGYd2Qoh7w1x9XmlgNrny5jE9zc4MD4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

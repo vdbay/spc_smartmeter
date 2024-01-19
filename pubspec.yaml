@@ -1,0 +1,61 @@
+name: spc_smartmeter
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=3.2.2 <4.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.2
+  get: 4.6.6
+  flutter: 
+    sdk: flutter
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.16.0
+  google_fonts: ^6.1.0
+
+dev_dependencies:
+  package_rename: ^1.5.3
+  flutter_lints: ^2.0.0
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/fonts/
+    - assets/logos/
+    - assets/videos/
+
+package_rename_config:
+  android:
+    app_name: SPC Smart Meter
+    package_name: com.scadaprimacipta.smartmeter
+    override_old_package: com.example.spc_smartmeter
+    lang: kotlin
+
+  ios:
+    app_name: SPC Smart Meter
+    bundle_name: smartmeter
+    package_name: com.scadaprimacipta.smartmeter
+
+  web:
+    app_name: SPC Smart Meter
+    description: Smart App for Smart Meter
+
+  linux:
+    app_name: SPC Smart Meter
+    package_name: com.scadaprimacipta.smartmeter
+    exe_name: smartmeter-linux-x64
+
+  windows:
+    app_name: SPC Smart Meter
+    organization: Scada Prima Cipta
+    copyright_notice: Copyright ©️ 2024 Scada Prima Cipta. All rights reserved.
+    exe_name: smartmeter-win32
+
+  macos:
+    app_name: SPC Smart Meter
+    package_name: com.scadaprimacipta.smartmeter
+    copyright_notice: Copyright ©️ 2024 Scada Prima Cipta. All rights reserved.

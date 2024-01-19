@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyCePY03JXzCxl9kWvvgRpoG0tvkRCzl8NE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>342864669441</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.scadaprimacipta.smartmeter.RunnerTests</string>
+	<key>PROJECT_ID</key>
+	<string>spc-smart-meter</string>
+	<key>STORAGE_BUCKET</key>
+	<string>spc-smart-meter.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:342864669441:ios:f06beb0f5e558bb9600900</string>
+</dict>
+</plist>
