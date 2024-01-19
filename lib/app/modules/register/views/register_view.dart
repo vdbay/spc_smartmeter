@@ -56,7 +56,7 @@ class RegisterView extends GetView<RegisterController> {
                     child: Column(
                       children: [
                         SPCTextFormField(
-                          controller: controller.nameController,
+                          textController: controller.nameController,
                           focusNode: nameFocusNode,
                           textInputAction: TextInputAction.next,
                           keyboardType: TextInputType.name,
@@ -79,7 +79,7 @@ class RegisterView extends GetView<RegisterController> {
                           child: Material(
                             type: MaterialType.transparency,
                             child: SPCTextFormField(
-                              controller: controller.emailController,
+                              textController: controller.emailController,
                               focusNode: emailFocusNode,
                               textInputAction: TextInputAction.next,
                               keyboardType: TextInputType.emailAddress,
@@ -99,7 +99,7 @@ class RegisterView extends GetView<RegisterController> {
                         ),
                         const SizedBox(height: 10),
                         SPCTextFormField(
-                          controller: controller.phoneController,
+                          textController: controller.phoneController,
                           focusNode: phoneFocusNode,
                           textInputAction: TextInputAction.next,
                           keyboardType: TextInputType.phone,

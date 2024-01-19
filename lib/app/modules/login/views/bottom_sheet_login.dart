@@ -35,7 +35,7 @@ class BottomSheetLogin {
               ),
               const SizedBox(height: 12),
               SPCTextFormField(
-                controller: passwordController,
+                textController: passwordController,
                 prefixIcon: const Icon(Icons.lock),
                 isPassword: true,
                 labelText: 'Password'.hardcoded,
@@ -108,37 +108,37 @@ class BottomSheetLogin {
                 children: [
                   Expanded(
                     child: SPCNumberTextFormField(
-                        controller: otpController.otpController1,
+                        textController: otpController.otpController1,
                         focusNode: focusNode1),
                   ),
                   const SizedBox(width: 12),
                   Expanded(
                     child: SPCNumberTextFormField(
-                        controller: otpController.otpController2,
+                        textController: otpController.otpController2,
                         focusNode: focusNode2),
                   ),
                   const SizedBox(width: 12),
                   Expanded(
                     child: SPCNumberTextFormField(
-                        controller: otpController.otpController3,
+                        textController: otpController.otpController3,
                         focusNode: focusNode3),
                   ),
                   const SizedBox(width: 12),
                   Expanded(
                     child: SPCNumberTextFormField(
-                        controller: otpController.otpController4,
+                        textController: otpController.otpController4,
                         focusNode: focusNode4),
                   ),
                   const SizedBox(width: 12),
                   Expanded(
                     child: SPCNumberTextFormField(
-                        controller: otpController.otpController5,
+                        textController: otpController.otpController5,
                         focusNode: focusNode5),
                   ),
                   const SizedBox(width: 12),
                   Expanded(
                     child: SPCNumberTextFormField(
-                      controller: otpController.otpController6,
+                      textController: otpController.otpController6,
                       focusNode: focusNode6,
                       isLast: true,
                     ),

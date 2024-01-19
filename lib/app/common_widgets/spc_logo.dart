@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import '../constants/image_strings.dart';
 import '../constants/text_strings.dart';
 
-class SPCLogo extends StatelessWidget {
+class SPCLogo extends GetView {
   const SPCLogo({super.key, this.widthModifier = 0.5});
   final double widthModifier;
   @override

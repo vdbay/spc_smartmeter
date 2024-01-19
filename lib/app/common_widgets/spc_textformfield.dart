@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class SPCTextFormField extends StatelessWidget {
+class SPCTextFormField extends GetView {
   const SPCTextFormField(
       {super.key,
       this.isPassword = false,
@@ -12,7 +12,7 @@ class SPCTextFormField extends StatelessWidget {
       this.focusNode,
       this.textInputAction,
       this.keyboardType,
-      this.controller,
+      this.textController,
       this.readOnly = false});
   final bool isPassword;
   final Widget? prefixIcon;
@@ -22,14 +22,14 @@ class SPCTextFormField extends StatelessWidget {
   final FocusNode? focusNode;
   final TextInputAction? textInputAction;
   final TextInputType? keyboardType;
-  final TextEditingController? controller;
+  final TextEditingController? textController;
   final bool readOnly;
   @override
   Widget build(BuildContext context) {
     final RxBool isObscured = isPassword.obs;
     return Obx(() => TextFormField(
           readOnly: readOnly,
-          controller: controller,
+          controller: textController,
           focusNode: focusNode,
           textInputAction: textInputAction,
           keyboardType: keyboardType,

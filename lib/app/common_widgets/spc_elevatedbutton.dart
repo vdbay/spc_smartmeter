@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class SPCElevatedButton extends StatelessWidget {
+class SPCElevatedButton extends GetView {
   const SPCElevatedButton({
     super.key,
     this.isAlternative = false,

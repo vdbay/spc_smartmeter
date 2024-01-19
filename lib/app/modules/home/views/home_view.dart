@@ -62,10 +62,10 @@ class HomeView extends GetView<HomeController> {
                                         .textTheme
                                         .bodyLarge
                                         ?.copyWith(
-                                      color: Theme.of(context)
-                                          .colorScheme
-                                          .onPrimary,
-                                    ),
+                                          color: Theme.of(context)
+                                              .colorScheme
+                                              .onPrimary,
+                                        ),
                                     maxLines: 1,
                                     overflow: TextOverflow.ellipsis,
                                   );
@@ -77,10 +77,10 @@ class HomeView extends GetView<HomeController> {
                                         .textTheme
                                         .bodyLarge
                                         ?.copyWith(
-                                      color: Theme.of(context)
-                                          .colorScheme
-                                          .onPrimary,
-                                    ),
+                                          color: Theme.of(context)
+                                              .colorScheme
+                                              .onPrimary,
+                                        ),
                                     maxLines: 1,
                                     overflow: TextOverflow.ellipsis,
                                   );
@@ -92,9 +92,10 @@ class HomeView extends GetView<HomeController> {
                         IconButton(
                             onPressed: () {
                               Get.to(() => SPCBlankScreen(
-                                appbarTitle: 'Inbox Mail'.hardcoded,
-                                bodyText: 'You have no mail in your inbox'.hardcoded,
-                              ));
+                                    appbarTitle: 'Inbox Mail'.hardcoded,
+                                    bodyText: 'You have no mail in your inbox'
+                                        .hardcoded,
+                                  ));
                             },
                             icon: Icon(
                               Icons.mail,
@@ -103,9 +104,10 @@ class HomeView extends GetView<HomeController> {
                         IconButton(
                           onPressed: () {
                             Get.to(() => SPCBlankScreen(
-                              appbarTitle: 'Notifications'.hardcoded,
-                              bodyText: 'You have no notifications'.hardcoded,
-                            ));
+                                  appbarTitle: 'Notifications'.hardcoded,
+                                  bodyText:
+                                      'You have no notifications'.hardcoded,
+                                ));
                           },
                           icon: Icon(
                             Icons.notifications,
@@ -150,9 +152,9 @@ class HomeView extends GetView<HomeController> {
                                   .textTheme
                                   .bodyMedium
                                   ?.copyWith(
-                                color:
-                                Theme.of(context).colorScheme.onPrimary,
-                              ),
+                                    color:
+                                        Theme.of(context).colorScheme.onPrimary,
+                                  ),
                             ),
                             Text(
                               '25°C',
@@ -160,9 +162,9 @@ class HomeView extends GetView<HomeController> {
                                   .textTheme
                                   .bodyMedium
                                   ?.copyWith(
-                                color:
-                                Theme.of(context).colorScheme.onPrimary,
-                              ),
+                                    color:
+                                        Theme.of(context).colorScheme.onPrimary,
+                                  ),
                             ),
                           ],
                         ),
@@ -176,9 +178,9 @@ class HomeView extends GetView<HomeController> {
                                   .textTheme
                                   .bodyMedium
                                   ?.copyWith(
-                                color:
-                                Theme.of(context).colorScheme.onPrimary,
-                              ),
+                                    color:
+                                        Theme.of(context).colorScheme.onPrimary,
+                                  ),
                             ),
                             Text(
                               '50%',
@@ -186,9 +188,9 @@ class HomeView extends GetView<HomeController> {
                                   .textTheme
                                   .bodyMedium
                                   ?.copyWith(
-                                color:
-                                Theme.of(context).colorScheme.onPrimary,
-                              ),
+                                    color:
+                                        Theme.of(context).colorScheme.onPrimary,
+                                  ),
                             ),
                           ],
                         ),
@@ -202,9 +204,9 @@ class HomeView extends GetView<HomeController> {
                                   .textTheme
                                   .bodyMedium
                                   ?.copyWith(
-                                color:
-                                Theme.of(context).colorScheme.onPrimary,
-                              ),
+                                    color:
+                                        Theme.of(context).colorScheme.onPrimary,
+                                  ),
                             ),
                             Text(
                               '5 km/h',
@@ -212,9 +214,9 @@ class HomeView extends GetView<HomeController> {
                                   .textTheme
                                   .bodyMedium
                                   ?.copyWith(
-                                color:
-                                Theme.of(context).colorScheme.onPrimary,
-                              ),
+                                    color:
+                                        Theme.of(context).colorScheme.onPrimary,
+                                  ),
                             ),
                           ],
                         ),
@@ -246,9 +248,9 @@ class HomeView extends GetView<HomeController> {
                                   .textTheme
                                   .bodyMedium
                                   ?.copyWith(
-                                color:
-                                Theme.of(context).colorScheme.onPrimary,
-                              ),
+                                    color:
+                                        Theme.of(context).colorScheme.onPrimary,
+                                  ),
                             ),
                             Text(
                               '30°C',
@@ -256,9 +258,9 @@ class HomeView extends GetView<HomeController> {
                                   .textTheme
                                   .bodyMedium
                                   ?.copyWith(
-                                color:
-                                Theme.of(context).colorScheme.onPrimary,
-                              ),
+                                    color:
+                                        Theme.of(context).colorScheme.onPrimary,
+                                  ),
                             ),
                           ],
                         ),
@@ -272,9 +274,9 @@ class HomeView extends GetView<HomeController> {
                                   .textTheme
                                   .bodyMedium
                                   ?.copyWith(
-                                color:
-                                Theme.of(context).colorScheme.onPrimary,
-                              ),
+                                    color:
+                                        Theme.of(context).colorScheme.onPrimary,
+                                  ),
                             ),
                             Text(
                               '60%',
@@ -282,9 +284,9 @@ class HomeView extends GetView<HomeController> {
                                   .textTheme
                                   .bodyMedium
                                   ?.copyWith(
-                                color:
-                                Theme.of(context).colorScheme.onPrimary,
-                              ),
+                                    color:
+                                        Theme.of(context).colorScheme.onPrimary,
+                                  ),
                             ),
                           ],
                         ),
@@ -298,9 +300,9 @@ class HomeView extends GetView<HomeController> {
                                   .textTheme
                                   .bodyMedium
                                   ?.copyWith(
-                                color:
-                                Theme.of(context).colorScheme.onPrimary,
-                              ),
+                                    color:
+                                        Theme.of(context).colorScheme.onPrimary,
+                                  ),
                             ),
                             Text(
                               '10 km/h',
@@ -308,16 +310,15 @@ class HomeView extends GetView<HomeController> {
                                   .textTheme
                                   .bodyMedium
                                   ?.copyWith(
-                                color:
-                                Theme.of(context).colorScheme.onPrimary,
-                              ),
+                                    color:
+                                        Theme.of(context).colorScheme.onPrimary,
+                                  ),
                             ),
                           ],
                         ),
                       ],
                     ),
                   ),
-
                 ],
               ),
             ),

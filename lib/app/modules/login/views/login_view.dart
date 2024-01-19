@@ -60,7 +60,7 @@ class LoginView extends GetView<LoginController> {
                           child: Material(
                             type: MaterialType.transparency,
                             child: SPCTextFormField(
-                              controller: phoneController,
+                              textController: phoneController,
                               textInputAction: TextInputAction.done,
                               keyboardType: TextInputType.emailAddress,
                               prefixIcon: const Icon(Icons.person),

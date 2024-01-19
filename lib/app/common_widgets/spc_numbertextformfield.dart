@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class SPCNumberTextFormField extends StatelessWidget {
+class SPCNumberTextFormField extends GetView {
   const SPCNumberTextFormField({
     super.key,
     required this.focusNode,
     this.isLast = false,
-    required this.controller,
+    required this.textController,
   });
   final FocusNode focusNode;
   final bool isLast;
-  final TextEditingController controller;
+  final TextEditingController textController;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
@@ -19,14 +20,14 @@ class SPCNumberTextFormField extends StatelessWidget {
         }
         return null;
       },
-      controller: controller,
+      controller: textController,
       onChanged: (value) {
         if (value.length == 1) {
           FocusScope.of(context).nextFocus();
         } else if (value.isEmpty) {
           FocusScope.of(context).previousFocus();
         } else {
-          controller.text = value.substring(0, 1);
+          textController.text = value.substring(0, 1);
         }
       },
       textAlign: TextAlign.center,

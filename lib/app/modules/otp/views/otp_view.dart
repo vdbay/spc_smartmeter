@@ -58,37 +58,37 @@ class OtpView extends GetView<OtpController> {
                           children: [
                             Expanded(
                               child: SPCNumberTextFormField(
-                                  controller: controller.otpController1,
+                                  textController: controller.otpController1,
                                   focusNode: focusNode1),
                             ),
                             const SizedBox(width: 10),
                             Expanded(
                               child: SPCNumberTextFormField(
-                                  controller: controller.otpController2,
+                                  textController: controller.otpController2,
                                   focusNode: focusNode2),
                             ),
                             const SizedBox(width: 10),
                             Expanded(
                               child: SPCNumberTextFormField(
-                                  controller: controller.otpController3,
+                                  textController: controller.otpController3,
                                   focusNode: focusNode3),
                             ),
                             const SizedBox(width: 10),
                             Expanded(
                               child: SPCNumberTextFormField(
-                                  controller: controller.otpController4,
+                                  textController: controller.otpController4,
                                   focusNode: focusNode4),
                             ),
                             const SizedBox(width: 10),
                             Expanded(
                               child: SPCNumberTextFormField(
-                                  controller: controller.otpController5,
+                                  textController: controller.otpController5,
                                   focusNode: focusNode5),
                             ),
                             const SizedBox(width: 10),
                             Expanded(
                               child: SPCNumberTextFormField(
-                                controller: controller.otpController6,
+                                textController: controller.otpController6,
                                 focusNode: focusNode6,
                                 isLast: true,
                               ),

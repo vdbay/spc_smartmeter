@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class SPCProfileMenu extends StatelessWidget {
+class SPCProfileMenu extends GetView {
   const SPCProfileMenu({
     super.key,
     this.onTap,

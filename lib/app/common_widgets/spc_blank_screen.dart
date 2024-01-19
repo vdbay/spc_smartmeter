@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class SPCBlankScreen extends StatelessWidget {
+class SPCBlankScreen extends GetView {
   const SPCBlankScreen(
       {super.key,
       this.appbarTitle = 'SPC Blank Screen',
