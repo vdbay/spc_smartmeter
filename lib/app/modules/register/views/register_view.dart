@@ -158,7 +158,9 @@ class RegisterView extends GetView<RegisterController> {
                             textAlign: TextAlign.center,
                           ),
                           TextButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Get.offNamed(Routes.LOGIN);
+                            },
                             child: Text(
                               SPCTextString.login,
                               style: TextStyle(

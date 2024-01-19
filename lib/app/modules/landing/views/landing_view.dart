@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:spc_smartmeter/app/routes/app_pages.dart';
-import 'package:spc_smartmeter/app/utils/spc_utils.dart';
+import '../../../routes/app_pages.dart';
 
 import '../../../common_widgets/spc_elevatedbutton.dart';
 import '../../../common_widgets/spc_logo.dart';
@@ -55,11 +54,7 @@ class LandingView extends GetView<LandingController> {
                         child: SPCElevatedButton(
                           widthModifier: 0.25,
                           onPressed: () {
-                            SPCUtils.showSnackbar(
-                              SPCTextString.login,
-                              SPCTextString.login,
-                              type: 3,
-                            );
+                            Get.toNamed(Routes.LOGIN);
                           },
                           text: SPCTextString.login,
                         ),

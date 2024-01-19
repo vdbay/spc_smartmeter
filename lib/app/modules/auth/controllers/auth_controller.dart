@@ -26,7 +26,7 @@ class AuthController extends GetxController {
   void _setInitialScreen(User? user) {
     user == null
         ? Get.offAllNamed(Routes.LANDING)
-        : user.emailVerified
+        : (user.email != null || user.email != '') && !user.emailVerified
             ? Get.offAllNamed(Routes.HOME)
             : Get.offAllNamed(Routes.LANDING);
   }
