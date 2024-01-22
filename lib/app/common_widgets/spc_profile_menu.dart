@@ -20,7 +20,7 @@ class SPCProfileMenu extends GetView {
     return InkWell(
       onTap: onTap,
       child: Container(
-        color: isError == true ? Theme.of(context).colorScheme.error : null,
+        color: isError == true ? Get.theme.colorScheme.error : null,
         margin: const EdgeInsets.symmetric(horizontal: 10),
         padding: const EdgeInsets.symmetric(horizontal: 10),
         height: 48,
@@ -30,26 +30,26 @@ class SPCProfileMenu extends GetView {
             Icon(
               leadingIcon,
               color: isError == true
-                  ? Theme.of(context).colorScheme.onError
-                  : Theme.of(context).colorScheme.primary,
+                  ? Get.theme.colorScheme.onError
+                  : Get.theme.colorScheme.primary,
               size: 36,
             ),
             const SizedBox(width: 10),
             Text(
               text,
-              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: isError == true
-                        ? Theme.of(context).colorScheme.onError
-                        : Theme.of(context).colorScheme.primary,
-                  ),
+              style: Get.theme.textTheme.bodyMedium?.copyWith(
+                color: isError == true
+                    ? Get.theme.colorScheme.onError
+                    : Get.theme.colorScheme.primary,
+              ),
             ),
             const Spacer(),
             Icon(
               trailingIcon,
               size: 36,
               color: isError == true
-                  ? Theme.of(context).colorScheme.onError
-                  : Theme.of(context).colorScheme.primary,
+                  ? Get.theme.colorScheme.onError
+                  : Get.theme.colorScheme.primary,
             ),
           ],
         ),

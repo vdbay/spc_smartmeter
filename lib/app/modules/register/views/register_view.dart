@@ -36,7 +36,7 @@ class RegisterView extends GetView<RegisterController> {
                     transitionOnUserGestures: true,
                     child: Text(
                       SPCTextString.getStarted,
-                      style: Theme.of(context).textTheme.displayMedium,
+                      style: Get.theme.textTheme.displayMedium,
                       textAlign: TextAlign.center,
                     ),
                   ),
@@ -45,7 +45,7 @@ class RegisterView extends GetView<RegisterController> {
                     transitionOnUserGestures: true,
                     child: Text(
                       SPCTextString.createAccount,
-                      style: Theme.of(context).textTheme.headlineSmall,
+                      style: Get.theme.textTheme.headlineSmall,
                       textAlign: TextAlign.center,
                     ),
                   ),
@@ -164,7 +164,7 @@ class RegisterView extends GetView<RegisterController> {
                             child: Text(
                               SPCTextString.login,
                               style: TextStyle(
-                                  color: Theme.of(context).colorScheme.primary),
+                                  color: Get.theme.colorScheme.primary),
                               textAlign: TextAlign.center,
                             ),
                           ),

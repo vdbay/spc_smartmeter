@@ -32,7 +32,7 @@ class LandingView extends GetView<LandingController> {
                     tag: SPCTextString.title,
                     child: Text(
                       SPCTextString.spcLong,
-                      style: Theme.of(context).textTheme.displayMedium,
+                      style: Get.theme.textTheme.displayMedium,
                       textAlign: TextAlign.center,
                     ),
                   ),
@@ -41,7 +41,7 @@ class LandingView extends GetView<LandingController> {
                     tag: SPCTextString.subtitle,
                     child: Text(
                       'Over 20 years of experience'.hardcoded,
-                      style: Theme.of(context).textTheme.headlineSmall,
+                      style: Get.theme.textTheme.headlineSmall,
                       textAlign: TextAlign.center,
                     ),
                   ),

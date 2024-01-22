@@ -22,15 +22,14 @@ class SPCElevatedButton extends GetView {
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        backgroundColor: isAlternative
-            ? Theme.of(context).colorScheme.primary
-            : backgroundColor,
+        backgroundColor:
+            isAlternative ? Get.theme.colorScheme.primary : backgroundColor,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
         ),
         side: BorderSide(
           width: 2.0,
-          color: Theme.of(context).colorScheme.primary,
+          color: Get.theme.colorScheme.primary,
         ),
       ),
       onPressed: onPressed,
@@ -40,9 +39,7 @@ class SPCElevatedButton extends GetView {
           text.toUpperCase(),
           textAlign: TextAlign.center,
           style: TextStyle(
-            color: isAlternative
-                ? Theme.of(context).colorScheme.onPrimary
-                : textColor,
+            color: isAlternative ? Get.theme.colorScheme.onPrimary : textColor,
           ),
         ),
       ),

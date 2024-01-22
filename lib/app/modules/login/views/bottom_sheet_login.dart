@@ -31,7 +31,7 @@ class BottomSheetLogin {
             children: [
               Text(
                 'Insert Password',
-                style: Theme.of(context).textTheme.headlineSmall,
+                style: Get.theme.textTheme.headlineSmall,
               ),
               const SizedBox(height: 12),
               SPCTextFormField(
@@ -56,7 +56,7 @@ class BottomSheetLogin {
                   TextButton(
                     child: Text(
                       'Forgot Password ?'.hardcoded,
-                      style: Theme.of(context).textTheme.bodyLarge,
+                      style: Get.theme.textTheme.bodyLarge,
                       textAlign: TextAlign.right,
                     ),
                     onPressed: () {
@@ -77,7 +77,7 @@ class BottomSheetLogin {
           ),
         ),
       ),
-      backgroundColor: Theme.of(context).colorScheme.surface,
+      backgroundColor: Get.theme.colorScheme.surface,
     );
   }
 
@@ -101,7 +101,7 @@ class BottomSheetLogin {
             children: [
               Text(
                 'Insert OTP'.hardcoded,
-                style: Theme.of(context).textTheme.headlineSmall,
+                style: Get.theme.textTheme.headlineSmall,
               ),
               const SizedBox(height: 12),
               Row(
@@ -165,7 +165,7 @@ class BottomSheetLogin {
           ),
         ),
       ),
-      backgroundColor: Theme.of(context).colorScheme.surface,
+      backgroundColor: Get.theme.colorScheme.surface,
     );
   }
 }

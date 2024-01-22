@@ -36,7 +36,7 @@ class LoginView extends GetView<LoginController> {
                     transitionOnUserGestures: true,
                     child: Text(
                       SPCTextString.welcome,
-                      style: Theme.of(context).textTheme.displayMedium,
+                      style: Get.theme.textTheme.displayMedium,
                       textAlign: TextAlign.center,
                     ),
                   ),
@@ -45,7 +45,7 @@ class LoginView extends GetView<LoginController> {
                     transitionOnUserGestures: true,
                     child: Text(
                       SPCTextString.loginSubtitle,
-                      style: Theme.of(context).textTheme.headlineSmall,
+                      style: Get.theme.textTheme.headlineSmall,
                       textAlign: TextAlign.center,
                     ),
                   ),
@@ -125,9 +125,7 @@ class LoginView extends GetView<LoginController> {
                                     SPCTextString.signUp,
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
-                                        color: Theme.of(context)
-                                            .colorScheme
-                                            .primary),
+                                        color: Get.theme.colorScheme.primary),
                                   ),
                                 ),
                               ],

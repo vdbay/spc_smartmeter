@@ -23,7 +23,7 @@ class ProfileDrawer extends GetView<ProfileController> {
                 margin: const EdgeInsets.symmetric(horizontal: 10),
                 padding: const EdgeInsets.all(20),
                 decoration: BoxDecoration(
-                  color: Theme.of(context).colorScheme.primary,
+                  color: Get.theme.colorScheme.primary,
                   borderRadius: const BorderRadius.all(
                     Radius.circular(20),
                   ),
@@ -43,7 +43,7 @@ class ProfileDrawer extends GetView<ProfileController> {
                                 )
                               : CircleAvatar(
                                   backgroundColor:
-                                      Theme.of(context).colorScheme.onPrimary,
+                                      Get.theme.colorScheme.onPrimary,
                                   child: FutureBuilder<UserModel?>(
                                     future: controller.getUserData(),
                                     builder: (BuildContext context,
@@ -51,23 +51,19 @@ class ProfileDrawer extends GetView<ProfileController> {
                                       if (snapshot.hasData) {
                                         return Text(
                                           snapshot.data!.name[0],
-                                          style: Theme.of(context)
-                                              .textTheme
-                                              .headlineMedium
+                                          style: Get
+                                              .theme.textTheme.headlineMedium
                                               ?.copyWith(
-                                                  color: Theme.of(context)
-                                                      .colorScheme
+                                                  color: Get.theme.colorScheme
                                                       .primary),
                                         );
                                       } else {
                                         return Text(
                                           SPCTextString.loadingPlaceholder,
-                                          style: Theme.of(context)
-                                              .textTheme
-                                              .headlineMedium
+                                          style: Get
+                                              .theme.textTheme.headlineMedium
                                               ?.copyWith(
-                                                  color: Theme.of(context)
-                                                      .colorScheme
+                                                  color: Get.theme.colorScheme
                                                       .primary),
                                         );
                                       }
@@ -87,26 +83,20 @@ class ProfileDrawer extends GetView<ProfileController> {
                                   if (snapshot.hasData) {
                                     return Text(
                                       snapshot.data!.name,
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .headlineMedium
+                                      style: Get.theme.textTheme.headlineMedium
                                           ?.copyWith(
-                                              color: Theme.of(context)
-                                                  .colorScheme
-                                                  .onPrimary),
+                                              color: Get
+                                                  .theme.colorScheme.onPrimary),
                                       maxLines: 1,
                                       overflow: TextOverflow.ellipsis,
                                     );
                                   } else {
                                     return Text(
                                       SPCTextString.loadingPlaceholder,
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .headlineMedium
+                                      style: Get.theme.textTheme.headlineMedium
                                           ?.copyWith(
-                                              color: Theme.of(context)
-                                                  .colorScheme
-                                                  .onPrimary),
+                                              color: Get
+                                                  .theme.colorScheme.onPrimary),
                                       maxLines: 1,
                                       overflow: TextOverflow.ellipsis,
                                     );
@@ -128,42 +118,8 @@ class ProfileDrawer extends GetView<ProfileController> {
                   ],
                 ),
               ),
-              // Divider(
-              //   color: Theme.of(context).colorScheme.primary,
-              //   indent: 20,
-              //   endIndent: 20,
-              // ),
-              // SPCProfileMenu(
-              //     onTap: () {
-              //       SPCUtils.comingSoonSnackbar();
-              //     },
-              //     leadingIcon: Icons.person,
-              //     text: SPCTextString.accountsTitle),
-              // Divider(
-              //   color: Theme.of(context).colorScheme.primary,
-              //   indent: 20,
-              //   endIndent: 20,
-              // ),
-              // SPCProfileMenu(
-              //     onTap: () {
-              //       SPCUtils.comingSoonSnackbar();
-              //     },
-              //     leadingIcon: Icons.settings,
-              //     text: SPCTextString.settingsTitle),
-              // Divider(
-              //   color: Theme.of(context).colorScheme.primary,
-              //   indent: 20,
-              //   endIndent: 20,
-              // ),
-              // SPCProfileMenu(
-              //   onTap: () {
-              //     SPCUtils.comingSoonSnackbar();
-              //   },
-              //   leadingIcon: Icons.info,
-              //   text: SPCTextString.aboutTitle,
-              // ),
               Divider(
-                color: Theme.of(context).colorScheme.primary,
+                color: Get.theme.colorScheme.primary,
                 indent: 20,
                 endIndent: 20,
               ),
@@ -178,7 +134,7 @@ class ProfileDrawer extends GetView<ProfileController> {
                       : Icons.toggle_off_outlined,
                   text: SPCTextString.darkMode),
               Divider(
-                color: Theme.of(context).colorScheme.primary,
+                color: Get.theme.colorScheme.primary,
                 indent: 20,
                 endIndent: 20,
               ),

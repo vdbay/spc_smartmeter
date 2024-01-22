@@ -36,7 +36,7 @@ class OtpView extends GetView<OtpController> {
                     transitionOnUserGestures: true,
                     child: Text(
                       SPCTextString.otpVerification,
-                      style: Theme.of(context).textTheme.displayMedium,
+                      style: Get.theme.textTheme.displayMedium,
                       textAlign: TextAlign.center,
                     ),
                   ),
@@ -45,7 +45,7 @@ class OtpView extends GetView<OtpController> {
                     transitionOnUserGestures: true,
                     child: Text(
                       SPCTextString.enterOTP,
-                      style: Theme.of(context).textTheme.headlineSmall,
+                      style: Get.theme.textTheme.headlineSmall,
                       textAlign: TextAlign.center,
                     ),
                   ),

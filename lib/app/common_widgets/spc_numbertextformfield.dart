@@ -23,9 +23,9 @@ class SPCNumberTextFormField extends GetView {
       controller: textController,
       onChanged: (value) {
         if (value.length == 1) {
-          FocusScope.of(context).nextFocus();
+          Get.focusScope?.nextFocus();
         } else if (value.isEmpty) {
-          FocusScope.of(context).previousFocus();
+          Get.focusScope?.previousFocus();
         } else {
           textController.text = value.substring(0, 1);
         }
