@@ -125,7 +125,7 @@ class HomeView extends GetView<HomeController> {
                   children: [
                     SPCHomeMenu(
                       Icon(
-                        Icons.rice_bowl_outlined,
+                        Icons.grain_outlined,
                         size: 64,
                         color: Get.theme.colorScheme.primary,
                       ),
