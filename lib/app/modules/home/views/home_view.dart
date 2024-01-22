@@ -125,64 +125,75 @@ class HomeView extends GetView<HomeController> {
                   children: [
                     const SizedBox(height: 10),
                     SPCHomeMenu(
-                      Icon(
+                      onTap: () {
+                        Get.to(SPCBlankScreen(
+                            appbarTitle: 'Grain'.hardcoded,
+                            bodyText: 'Grain'.hardcoded));
+                      },
+                      icon: Icon(
                         Icons.grain_outlined,
                         size: 64,
                         color: Get.theme.colorScheme.primary,
                       ),
-                      'Grain Quality'.hardcoded,
-                      'Read and analyze grain quality and quantity using smartphone camera. You can monitor grain quality day to day using historical trending. Alarm can notify user concerning bad quality grain.'
-                          .hardcoded,
+                      title: 'Grain Quality'.hardcoded,
+                      description:
+                          'Read and analyze grain quality and quantity using smartphone camera. You can monitor grain quality day to day using historical trending. Alarm can notify user concerning bad quality grain.'
+                              .hardcoded,
                     ),
                     SPCHomeMenu(
-                      Icon(
+                      icon: Icon(
                         Icons.bolt_outlined,
                         size: 64,
                         color: Get.theme.colorScheme.primary,
                       ),
-                      'Electricity'.hardcoded,
-                      'Read electricity total KWH consumption value from KWH meter using smartphone camera. You can monitor electricity consumption day to day using historical trending. Alarm can notify user concerning electricity consumption.'
-                          .hardcoded,
+                      title: 'Electricity'.hardcoded,
+                      description:
+                          'Read electricity total KWH consumption value from KWH meter using smartphone camera. You can monitor electricity consumption day to day using historical trending. Alarm can notify user concerning electricity consumption.'
+                              .hardcoded,
                     ),
                     SPCHomeMenu(
-                      Icon(
+                      icon: Icon(
                         Icons.directions_car_outlined,
                         size: 64,
                         color: Get.theme.colorScheme.primary,
                       ),
-                      'Automobile'.hardcoded,
-                      'Read automobile total KM value and fuel consumption from odometer dashboard using smartphone camera. You can monitor automobile KM and fuel consumption day to day using historical trending. Alarm can notify user concerning automobile KM and fuel consumption.'
-                          .hardcoded,
+                      title: 'Automobile'.hardcoded,
+                      description:
+                          'Read automobile total KM value and fuel consumption from odometer dashboard using smartphone camera. You can monitor automobile KM and fuel consumption day to day using historical trending. Alarm can notify user concerning automobile KM and fuel consumption.'
+                              .hardcoded,
                     ),
                     SPCHomeMenu(
-                      Icon(
+                      icon: Icon(
                         Icons.two_wheeler_outlined,
                         size: 64,
                         color: Get.theme.colorScheme.primary,
                       ),
-                      'Motorcycle'.hardcoded,
-                      'Read motorcycle total KM value and fuel consumption from odometer dashboard using smartphone camera. You can monitor motorcycle KM and fuel consumption day to day using historical trending. Alarm can notify user concerning motorcycle KM and fuel consumption.'
-                          .hardcoded,
+                      title: 'Motorcycle'.hardcoded,
+                      description:
+                          'Read motorcycle total KM value and fuel consumption from odometer dashboard using smartphone camera. You can monitor motorcycle KM and fuel consumption day to day using historical trending. Alarm can notify user concerning motorcycle KM and fuel consumption.'
+                              .hardcoded,
                     ),
                     SPCHomeMenu(
-                      Icon(
+                      icon: Icon(
                         Icons.gas_meter_outlined,
                         size: 64,
                         color: Get.theme.colorScheme.primary,
                       ),
-                      'Gas'.hardcoded,
-                      'Read gas consumption value from gas flow meter using smartphone camera. You can monitor gas consumption day to day using historical trending. Alarm can notify user concerning gas consumption.'
-                          .hardcoded,
+                      title: 'Gas'.hardcoded,
+                      description:
+                          'Read gas consumption value from gas flow meter using smartphone camera. You can monitor gas consumption day to day using historical trending. Alarm can notify user concerning gas consumption.'
+                              .hardcoded,
                     ),
                     SPCHomeMenu(
-                      Icon(
+                      icon: Icon(
                         Icons.water_drop_outlined,
                         size: 64,
                         color: Get.theme.colorScheme.primary,
                       ),
-                      'Water'.hardcoded,
-                      'Read water consumption value from water flow meter using smartphone camera. You can monitor water consumption day to day using historical trending. Alarm can notify user concerning water consumption.'
-                          .hardcoded,
+                      title: 'Water'.hardcoded,
+                      description:
+                          'Read water consumption value from water flow meter using smartphone camera. You can monitor water consumption day to day using historical trending. Alarm can notify user concerning water consumption.'
+                              .hardcoded,
                     ),
                     const SizedBox(height: 10),
                   ],
