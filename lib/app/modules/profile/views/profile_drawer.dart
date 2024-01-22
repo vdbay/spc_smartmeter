@@ -123,21 +123,21 @@ class ProfileDrawer extends GetView<ProfileController> {
                 indent: 20,
                 endIndent: 20,
               ),
-              SPCProfileMenu(
-                  onTap: () {
-                    Get.changeThemeMode(
-                        Get.isDarkMode ? ThemeMode.light : ThemeMode.dark);
-                  },
-                  leadingIcon: Icons.dark_mode,
-                  trailingIcon: Get.isDarkMode
-                      ? Icons.toggle_on_outlined
-                      : Icons.toggle_off_outlined,
-                  text: SPCTextString.darkMode),
-              Divider(
-                color: Get.theme.colorScheme.primary,
-                indent: 20,
-                endIndent: 20,
-              ),
+              // SPCProfileMenu(
+              //     onTap: () {
+              //       Get.changeThemeMode(
+              //           Get.isDarkMode ? ThemeMode.light : ThemeMode.dark);
+              //     },
+              //     leadingIcon: Icons.dark_mode,
+              //     trailingIcon: Get.isDarkMode
+              //         ? Icons.toggle_on_outlined
+              //         : Icons.toggle_off_outlined,
+              //     text: SPCTextString.darkMode),
+              // Divider(
+              //   color: Get.theme.colorScheme.primary,
+              //   indent: 20,
+              //   endIndent: 20,
+              // ),
               SPCProfileMenu(
                   isError: true,
                   onTap: () {
