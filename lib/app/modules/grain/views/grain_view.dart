@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:spc_smartmeter/app/common_widgets/spc_elevatedbutton.dart';
 import 'package:spc_smartmeter/app/localization/hardcoded.dart';
-import 'package:image_picker/image_picker.dart';
 
 import '../controllers/grain_controller.dart';
 
@@ -15,7 +14,6 @@ class GrainView extends GetView<GrainController> {
   @override
   Widget build(BuildContext context) {
     bool isDataExist = true;
-    Rx<File?> uploadedImage = Rx(null);
     return Scaffold(
       appBar: AppBar(
         title: const Text('GrainView'),
@@ -29,9 +27,9 @@ class GrainView extends GetView<GrainController> {
               AspectRatio(
                   aspectRatio: 16 / 9,
                   child: Obx(
-                    () => uploadedImage.value != null
+                    () => controller.uploadedImage.value != null
                         ? Image.file(
-                            uploadedImage.value!,
+                            File(controller.uploadedImage.value!.path),
                             fit: BoxFit.scaleDown,
                           )
                         : const Placeholder(),
@@ -45,26 +43,25 @@ class GrainView extends GetView<GrainController> {
                   SPCElevatedButton(
                     widthModifier: 0.25,
                     onPressed: () {
-                      final picker = ImagePicker();
-                      picker
-                          .pickImage(source: ImageSource.gallery)
-                          .then((value) {
-                        if (value != null) {
-                          uploadedImage.value = File(value.path);
-                        }
-                      });
+                      controller.pickImage();
                     },
                     text: 'Upload'.hardcoded,
                   ),
                   SPCElevatedButton(
                     widthModifier: 0.25,
                     onPressed: () {
-                      uploadedImage.value = null;
+                      controller.uploadedImage.value = null;
                     },
                     text: 'Clear'.hardcoded,
                   ),
                 ],
               ),
+              const SizedBox(
+                height: 20,
+              ),
+              SPCElevatedButton(onPressed: () {
+                controller.analyzeImage();
+              }, text: 'Submit'.hardcoded),
               const Divider(),
               Text('History'.hardcoded, style: Get.textTheme.headlineMedium),
               const Divider(),

@@ -46,7 +46,7 @@ class SPCUtils {
 
   static void showSnackbar(String title, String message,
       {int type = 4, SnackPosition position = SnackPosition.BOTTOM}) {
-    Get.isSnackbarOpen ? Get.back() : null;
+    Get.isSnackbarOpen ? Get.closeAllSnackbars() : null;
     // type 1: success, type 2: error, type 3: warning, type 4: info (default)
     Get.snackbar(
       title,
