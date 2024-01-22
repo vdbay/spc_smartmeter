@@ -117,12 +117,13 @@ class HomeView extends GetView<HomeController> {
         ),
         body: SafeArea(
           child: Container(
-            padding: const EdgeInsets.all(20),
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             child: SingleChildScrollView(
               child: Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    const SizedBox(height: 10),
                     SPCHomeMenu(
                       Icon(
                         Icons.grain_outlined,
@@ -183,6 +184,7 @@ class HomeView extends GetView<HomeController> {
                       'Read water consumption value from water flow meter using smartphone camera. You can monitor water consumption day to day using historical trending. Alarm can notify user concerning water consumption.'
                           .hardcoded,
                     ),
+                    const SizedBox(height: 10),
                   ],
                 ),
               ),
