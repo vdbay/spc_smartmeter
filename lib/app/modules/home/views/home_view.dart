@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:spc_smartmeter/app/common_widgets/spc_home_menu.dart';
 import 'package:spc_smartmeter/app/localization/hardcoded.dart';
+import 'package:spc_smartmeter/app/routes/app_pages.dart';
 
 import '../../../common_widgets/spc_blank_screen.dart';
 import '../../../constants/text_strings.dart';
@@ -126,9 +127,7 @@ class HomeView extends GetView<HomeController> {
                     const SizedBox(height: 10),
                     SPCHomeMenu(
                       onTap: () {
-                        Get.to(SPCBlankScreen(
-                            appbarTitle: 'Grain'.hardcoded,
-                            bodyText: 'Grain'.hardcoded));
+                        Get.toNamed(Routes.GRAIN);
                       },
                       icon: Icon(
                         Icons.grain_outlined,

@@ -2,6 +2,8 @@ import 'package:get/get.dart';
 
 import '../modules/auth/bindings/auth_binding.dart';
 import '../modules/auth/views/auth_view.dart';
+import '../modules/grain/bindings/grain_binding.dart';
+import '../modules/grain/views/grain_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/landing/bindings/landing_binding.dart';
@@ -66,6 +68,11 @@ class AppPages {
       name: _Paths.PROFILE,
       page: () => const ProfileView(),
       binding: ProfileBinding(),
+    ),
+    GetPage(
+      name: _Paths.GRAIN,
+      page: () => const GrainView(),
+      binding: GrainBinding(),
     ),
   ];
 }

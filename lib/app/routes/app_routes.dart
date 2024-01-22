@@ -13,6 +13,7 @@ abstract class Routes {
   static const USER = _Paths.USER;
   static const OTP = _Paths.OTP;
   static const PROFILE = _Paths.PROFILE;
+  static const GRAIN = _Paths.GRAIN;
 }
 
 abstract class _Paths {
@@ -25,4 +26,5 @@ abstract class _Paths {
   static const USER = '/user';
   static const OTP = '/otp';
   static const PROFILE = '/profile';
+  static const GRAIN = '/grain';
 }
